@@ -1,0 +1,98 @@
+export interface Country {
+  name: string;
+  capital: string;
+  region: 'Africa' | 'Asia' | 'Europe' | 'Americas' | 'Oceania';
+  code: string;
+}
+
+export const countries: Country[] = [
+  // Europe
+  { name: 'France', capital: 'Paris', region: 'Europe', code: 'fr' },
+  { name: 'Germany', capital: 'Berlin', region: 'Europe', code: 'de' },
+  { name: 'Italy', capital: 'Rome', region: 'Europe', code: 'it' },
+  { name: 'Spain', capital: 'Madrid', region: 'Europe', code: 'es' },
+  { name: 'United Kingdom', capital: 'London', region: 'Europe', code: 'gb' },
+  { name: 'Netherlands', capital: 'Amsterdam', region: 'Europe', code: 'nl' },
+  { name: 'Switzerland', capital: 'Bern', region: 'Europe', code: 'ch' },
+  { name: 'Sweden', capital: 'Stockholm', region: 'Europe', code: 'se' },
+  { name: 'Norway', capital: 'Oslo', region: 'Europe', code: 'no' },
+  { name: 'Greece', capital: 'Athens', region: 'Europe', code: 'gr' },
+  { name: 'Portugal', capital: 'Lisbon', region: 'Europe', code: 'pt' },
+  { name: 'Ireland', capital: 'Dublin', region: 'Europe', code: 'ie' },
+  { name: 'Belgium', capital: 'Brussels', region: 'Europe', code: 'be' },
+  { name: 'Austria', capital: 'Vienna', region: 'Europe', code: 'at' },
+  { name: 'Poland', capital: 'Warsaw', region: 'Europe', code: 'pl' },
+  { name: 'Denmark', capital: 'Copenhagen', region: 'Europe', code: 'dk' },
+  { name: 'Finland', capital: 'Helsinki', region: 'Europe', code: 'fi' },
+  { name: 'Czech Republic', capital: 'Prague', region: 'Europe', code: 'cz' },
+  { name: 'Hungary', capital: 'Budapest', region: 'Europe', code: 'hu' },
+  { name: 'Romania', capital: 'Bucharest', region: 'Europe', code: 'ro' },
+
+  // Asia
+  { name: 'Japan', capital: 'Tokyo', region: 'Asia', code: 'jp' },
+  { name: 'China', capital: 'Beijing', region: 'Asia', code: 'cn' },
+  { name: 'India', capital: 'New Delhi', region: 'Asia', code: 'in' },
+  { name: 'South Korea', capital: 'Seoul', region: 'Asia', code: 'kr' },
+  { name: 'Thailand', capital: 'Bangkok', region: 'Asia', code: 'th' },
+  { name: 'Vietnam', capital: 'Hanoi', region: 'Asia', code: 'vn' },
+  { name: 'Indonesia', capital: 'Jakarta', region: 'Asia', code: 'id' },
+  { name: 'Turkey', capital: 'Ankara', region: 'Asia', code: 'tr' },
+  { name: 'Israel', capital: 'Jerusalem', region: 'Asia', code: 'il' },
+  { name: 'Saudi Arabia', capital: 'Riyadh', region: 'Asia', code: 'sa' },
+  { name: 'Singapore', capital: 'Singapore', region: 'Asia', code: 'sg' },
+  { name: 'Philippines', capital: 'Manila', region: 'Asia', code: 'ph' },
+  { name: 'Malaysia', capital: 'Kuala Lumpur', region: 'Asia', code: 'my' },
+  { name: 'Pakistan', capital: 'Islamabad', region: 'Asia', code: 'pk' },
+  { name: 'United Arab Emirates', capital: 'Abu Dhabi', region: 'Asia', code: 'ae' },
+  { name: 'Iran', capital: 'Tehran', region: 'Asia', code: 'ir' },
+  { name: 'Iraq', capital: 'Baghdad', region: 'Asia', code: 'iq' },
+  { name: 'Kazakhstan', capital: 'Astana', region: 'Asia', code: 'kz' },
+  { name: 'Mongolia', capital: 'Ulaanbaatar', region: 'Asia', code: 'mn' },
+  { name: 'Nepal', capital: 'Kathmandu', region: 'Asia', code: 'np' },
+
+  // Africa
+  { name: 'Egypt', capital: 'Cairo', region: 'Africa', code: 'eg' },
+  { name: 'Nigeria', capital: 'Abuja', region: 'Africa', code: 'ng' },
+  { name: 'South Africa', capital: 'Pretoria', region: 'Africa', code: 'za' },
+  { name: 'Kenya', capital: 'Nairobi', region: 'Africa', code: 'ke' },
+  { name: 'Morocco', capital: 'Rabat', region: 'Africa', code: 'ma' },
+  { name: 'Ethiopia', capital: 'Addis Ababa', region: 'Africa', code: 'et' },
+  { name: 'Ghana', capital: 'Accra', region: 'Africa', code: 'gh' },
+  { name: 'Algeria', capital: 'Algiers', region: 'Africa', code: 'dz' },
+  { name: 'Tanzania', capital: 'Dodoma', region: 'Africa', code: 'tz' },
+  { name: 'Uganda', capital: 'Kampala', region: 'Africa', code: 'ug' },
+  { name: 'Senegal', capital: 'Dakar', region: 'Africa', code: 'sn' },
+  { name: 'Rwanda', capital: 'Kigali', region: 'Africa', code: 'rw' },
+  { name: 'Zimbabwe', capital: 'Harare', region: 'Africa', code: 'zw' },
+  { name: 'Tunisia', capital: 'Tunis', region: 'Africa', code: 'tn' },
+  { name: 'Angola', capital: 'Luanda', region: 'Africa', code: 'ao' },
+
+  // Americas
+  { name: 'United States', capital: 'Washington, D.C.', region: 'Americas', code: 'us' },
+  { name: 'Canada', capital: 'Ottawa', region: 'Americas', code: 'ca' },
+  { name: 'Brazil', capital: 'Brasília', region: 'Americas', code: 'br' },
+  { name: 'Mexico', capital: 'Mexico City', region: 'Americas', code: 'mx' },
+  { name: 'Argentina', capital: 'Buenos Aires', region: 'Americas', code: 'ar' },
+  { name: 'Colombia', capital: 'Bogotá', region: 'Americas', code: 'co' },
+  { name: 'Chile', capital: 'Santiago', region: 'Americas', code: 'cl' },
+  { name: 'Peru', capital: 'Lima', region: 'Americas', code: 'pe' },
+  { name: 'Cuba', capital: 'Havana', region: 'Americas', code: 'cu' },
+  { name: 'Jamaica', capital: 'Kingston', region: 'Americas', code: 'jm' },
+  { name: 'Costa Rica', capital: 'San José', region: 'Americas', code: 'cr' },
+  { name: 'Uruguay', capital: 'Montevideo', region: 'Americas', code: 'uy' },
+  { name: 'Ecuador', capital: 'Quito', region: 'Americas', code: 'ec' },
+  { name: 'Panama', capital: 'Panama City', region: 'Americas', code: 'pa' },
+  { name: 'Venezuela', capital: 'Caracas', region: 'Americas', code: 've' },
+
+  // Oceania
+  { name: 'Australia', capital: 'Canberra', region: 'Oceania', code: 'au' },
+  { name: 'New Zealand', capital: 'Wellington', region: 'Oceania', code: 'nz' },
+  { name: 'Fiji', capital: 'Suva', region: 'Oceania', code: 'fj' },
+  { name: 'Papua New Guinea', capital: 'Port Moresby', region: 'Oceania', code: 'pg' },
+  { name: 'Samoa', capital: 'Apia', region: 'Oceania', code: 'ws' },
+  { name: 'Tonga', capital: 'Nukuʻalofa', region: 'Oceania', code: 'to' },
+  { name: 'Solomon Islands', capital: 'Honiara', region: 'Oceania', code: 'sb' },
+  { name: 'Vanuatu', capital: 'Port Vila', region: 'Oceania', code: 'vu' },
+  { name: 'Palau', capital: 'Ngerulmud', region: 'Oceania', code: 'pw' },
+  { name: 'Kiribati', capital: 'South Tarawa', region: 'Oceania', code: 'ki' },
+];
